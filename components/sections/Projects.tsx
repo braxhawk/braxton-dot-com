@@ -5,10 +5,11 @@ import { staggerContainer, staggerItem, fadeInUp, viewportConfig } from "@/lib/m
 import { projects, type ProjectStatus } from "@/data/projects";
 
 const statusColor: Record<ProjectStatus, string> = {
-  "Active":      "text-olive",
-  "In Progress": "text-slate",
-  "Complete":    "text-smoke/40",
-  "Archived":    "text-smoke/25",
+  "Active":       "text-olive",
+  "In Progress":  "text-slate",
+  "Complete":     "text-smoke/40",
+  "Archived":     "text-smoke/25",
+  "Coming Soon":  "text-taupe",
 };
 
 export default function Projects() {

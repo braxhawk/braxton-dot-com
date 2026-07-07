@@ -23,7 +23,7 @@ export const posts: Post[] = [
     readTime: "6 min",
     excerpt:
       "Both disciplines reward working within limits. The 4/4 grid forces decisions. A type system forces decisions. The question is whether constraints become cages or catapults.",
-    published: true,
+    published: false,
   },
   {
     id: "P-002",
@@ -35,7 +35,7 @@ export const posts: Post[] = [
     readTime: "8 min",
     excerpt:
       "There's a category of software that doesn't need users, funding, or product-market fit. It just needs to work well for the one person who built it. I've been building more of this lately.",
-    published: true,
+    published: false,
   },
   {
     id: "P-003",
@@ -47,7 +47,7 @@ export const posts: Post[] = [
     readTime: "5 min",
     excerpt:
       "I have playlists sorted by decade, crates sorted by mood, notes sorted by session. At some point the catalog becomes the thing itself. A reflection on collection as identity.",
-    published: true,
+    published: false,
   },
   {
     id: "P-004",
@@ -59,7 +59,7 @@ export const posts: Post[] = [
     readTime: "7 min",
     excerpt:
       "A DJ set is a real-time feedback system. You have inputs (the room, the time, the energy), processing (your crate, your ear, your decisions), and outputs (movement, temperature, time). What changes when you think about it this way.",
-    published: true,
+    published: false,
   },
   {
     id: "P-005",
@@ -71,6 +71,6 @@ export const posts: Post[] = [
     readTime: "10 min",
     excerpt:
       "Not a tutorial. More like a collection of mental models that clicked for me after years of fighting the compiler. The type system as collaborator, not adversary.",
-    published: true,
+    published: false,
   },
 ];

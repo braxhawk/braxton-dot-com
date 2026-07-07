@@ -92,38 +92,39 @@ export const playlists: Playlist[] = [
 
 export const weeklyNotes: WeeklyNote[] = [
   {
-    id: "WN-008",
-    volume: "Vol. 08",
-    date: "March 2026",
+    id: "WN-001",
+    volume: "Vol. 01",
+    date: "July 2026",
     note:
-      "A week where the music had to carry more weight than usual. Four tracks that earned it.",
+      "Where the music had to carry more weight than usual. Four tracks that earned it.",
     tracks: [
       {
-        title: "Burning",
-        artist: "Mk.gee",
-        album: "Two Star & The Dream Police",
+        title: "Science Fiction",
+        artist: "Brunello",
+        album: "Science Fiction - Single",
+        year: "2026",
+        note: "On constant repeat.",
+      },
+      {
+        title: "Bring The House Down",
+        artist: "Sentinel",
+        album: "Bring The House Down - Single",
+        year: "2026",
+        note: "Never fails to get my excited.",
+      },
+      {
+        title: "Trifling",
+        artist: "DKMA",
+        album: "The East West Connection",
+        year: "2001",
+        note: "Crate digging lead me to a new favorite, absolute classic.",
+      },
+      {
+        title: "Mon Amour",
+        artist: "Raz Alon",
+        album: "All Stars 06",
         year: "2024",
-        note: "Still returning to this one.",
-      },
-      {
-        title: "Mood Valiant",
-        artist: "Hiatus Kaiyote",
-        album: "Mood Valiant",
-        year: "2021",
-        note: "Nai Palm's voice as structural element.",
-      },
-      {
-        title: "Nkosi Sikelel' iAfrika",
-        artist: "Abdullah Ibrahim",
-        year: "1976",
-        note: "Something about the restraint here.",
-      },
-      {
-        title: "Lavender",
-        artist: "BadBadNotGood",
-        album: "IV",
-        year: "2016",
-        note: "Late-night version of clarity.",
+        note: "Maccabi House is in my head rent free.",
       },
     ],
   },

@@ -1,4 +1,4 @@
-export type ProjectStatus = "Active" | "Complete" | "Archived" | "In Progress";
+export type ProjectStatus = "Active" | "Complete" | "Archived" | "In Progress" | "Coming Soon";
 
 export interface Project {
   id: string;
@@ -18,18 +18,6 @@ export const projects: Project[] = [
   {
     id: "BH-001",
     index: "01",
-    title: "Archival",
-    description:
-      "A structured music library system for DJs — tracking sets, crates, listening history, and weekly notes in a single local-first database.",
-    stack: ["Rust", "SQLite", "Tauri", "React"],
-    role: "Sole Engineer",
-    status: "In Progress",
-    year: "2026",
-    repo: "https://github.com",
-  },
-  {
-    id: "BH-002",
-    index: "02",
     title: "Cue Analysis AI",
     description:
       "A minimal app that allows for uploads of tracks, and analyzes them for the best spots for cue points.",
@@ -40,15 +28,14 @@ export const projects: Project[] = [
     repo: "https://github.com",
   },
   {
-    id: "BH-003",
-    index: "03",
+    id: "BH-002",
+    index: "02",
     title: "Tempo",
     description:
-      "A minimal BPM-synced note-taking app for DJs — capture thoughts on tracks mid-session without breaking flow.",
-    stack: ["React Native", "TypeScript", "Expo"],
+      "Upload a screenshot from Rekordbox at the exact moment a mix feels perfect — Tempo reads the waveform positions, BPMs, and cue markers to intelligently extract and log what made it work.",
+    stack: ["React Native", "TypeScript", "Expo", "Vision AI"],
     role: "Sole Engineer",
-    status: "In Progress",
+    status: "Coming Soon",
     year: "2026",
-    repo: "https://github.com",
-  }
+  },
 ];

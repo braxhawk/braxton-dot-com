@@ -66,7 +66,7 @@ export default function Writing() {
             </Link>
           </motion.div>
 
-          {/* Right — post list (8 cols) */}
+          {/* Right — post list or coming soon (8 cols) */}
           <motion.div
             className="lg:col-span-7 lg:col-start-6"
             variants={staggerContainer}
@@ -74,46 +74,70 @@ export default function Writing() {
             whileInView="show"
             viewport={viewportConfig}
           >
-            {publishedPosts.map((post) => (
-              <motion.article
-                key={post.id}
-                variants={staggerItem}
-                className="group"
-              >
-                <Link href={`/blog/${post.slug}`} className="block -mx-4 px-4 py-7 border-t border-ink/10 hover:bg-ink/[0.02] transition-colors duration-400">
-                  <div className="flex items-start justify-between gap-4 mb-3">
-                    <div className="flex items-center gap-3">
-                      <span className={`label-mono ${categoryColor[post.category]}`}>
-                        [ {categoryLabel[post.category]} ]
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-4 shrink-0">
-                      <span className="label-mono text-ink/25">{post.readTime}</span>
-                      <span className="label-mono text-ink/25">{post.date}</span>
-                    </div>
-                  </div>
+            {publishedPosts.length > 0 ? (
+              <>
+                {publishedPosts.map((post) => (
+                  <motion.article
+                    key={post.id}
+                    variants={staggerItem}
+                    className="group"
+                  >
+                    <Link href={`/blog/${post.slug}`} className="block -mx-4 px-4 py-7 border-t border-ink/10 hover:bg-ink/[0.02] transition-colors duration-400">
+                      <div className="flex items-start justify-between gap-4 mb-3">
+                        <div className="flex items-center gap-3">
+                          <span className={`label-mono ${categoryColor[post.category]}`}>
+                            [ {categoryLabel[post.category]} ]
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 shrink-0">
+                          <span className="label-mono text-ink/25">{post.readTime}</span>
+                          <span className="label-mono text-ink/25">{post.date}</span>
+                        </div>
+                      </div>
 
-                  <h3 className="text-ui-xl text-ink font-medium tracking-tight mb-1 group-hover:text-ink/80 transition-colors duration-400">
-                    {post.title}
-                  </h3>
-                  {post.subtitle && (
-                    <p className="text-ui-sm text-ink/40 font-light mb-3">
-                      {post.subtitle}
-                    </p>
-                  )}
-                  <p className="text-ui-sm text-ink/55 font-light leading-relaxed max-w-lg">
-                    {post.excerpt}
+                      <h3 className="text-ui-xl text-ink font-medium tracking-tight mb-1 group-hover:text-ink/80 transition-colors duration-400">
+                        {post.title}
+                      </h3>
+                      {post.subtitle && (
+                        <p className="text-ui-sm text-ink/40 font-light mb-3">
+                          {post.subtitle}
+                        </p>
+                      )}
+                      <p className="text-ui-sm text-ink/55 font-light leading-relaxed max-w-lg">
+                        {post.excerpt}
+                      </p>
+
+                      <div className="mt-4">
+                        <span className="label-mono text-ink/30 group-hover:text-ink/60 transition-colors duration-400">
+                          Read →
+                        </span>
+                      </div>
+                    </Link>
+                  </motion.article>
+                ))}
+                <div className="border-t border-ink/10" />
+              </>
+            ) : (
+              <motion.div variants={staggerItem}>
+                <div className="border-t border-ink/10 py-10">
+                  <div className="flex items-start justify-between gap-4 mb-8">
+                    <span className="label-mono text-ink/25">[ ARCHIVE ]</span>
+                    <span className="label-mono text-ink/20">VOL. 01</span>
+                  </div>
+                  <p className="font-display text-display-sm text-ink/80 leading-snug italic mb-4">
+                    Volume 01 — initializing.
                   </p>
-
-                  <div className="mt-4">
-                    <span className="label-mono text-ink/30 group-hover:text-ink/60 transition-colors duration-400">
-                      Read →
-                    </span>
+                  <p className="text-ui-sm text-ink/40 font-light leading-relaxed max-w-sm mb-10">
+                    Thoughts are forming. Writing is in progress. The archive opens soon.
+                  </p>
+                  <div className="flex items-center gap-6">
+                    <div className="h-px flex-1 bg-ink/8" />
+                    <span className="label-mono text-ink/20">EST. 2026</span>
                   </div>
-                </Link>
-              </motion.article>
-            ))}
-            <div className="border-t border-ink/10" />
+                </div>
+                <div className="border-t border-ink/10" />
+              </motion.div>
+            )}
           </motion.div>
         </div>
       </div>

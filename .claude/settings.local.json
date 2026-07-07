@@ -13,7 +13,9 @@
       "Bash(curl -s http://localhost:3000)",
       "Bash(curl -s \"http://localhost:3000/_next/static/css/app/layout.css?v=1783380303364\")",
       "Bash(pkill -f \"next dev\")",
-      "Bash(npm run dev &> /tmp/nextjs-dev.log & *)"
+      "Bash(npm run dev &> /tmp/nextjs-dev.log & *)",
+      "Bash(ls ~/.ssh/*.pub 2>/dev/null || echo \"no keys found\")",
+      "Read(//Users/braxtonhawkins/.ssh/**)"
     ],
     "additionalDirectories": [
       "/private/tmp"

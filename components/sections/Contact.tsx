@@ -5,8 +5,8 @@ import { fadeInUp, staggerContainer, staggerItem, viewportConfig } from "@/lib/m
 
 const links = [
   { label: "Email",    href: "mailto:hello@braxtonhawkins.com", display: "hello@braxtonhawkins.com" },
-  { label: "GitHub",   href: "https://github.com/braxtonhawkins", display: "github.com/braxhawk" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/braxtonhawkins", display: "linkedin.com/in/braxtonhawkins" },
+  { label: "GitHub",   href: "https://github.com/braxhawk", display: "github.com/braxhawk" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/braxton-hawkins-084367171/", display: "linkedin.com/in/braxtonhawkins" },
 ];
 
 export default function Contact() {
