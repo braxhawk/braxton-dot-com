@@ -38,7 +38,7 @@ export default function Writing() {
         >
           <span className="section-index text-slate">05</span>
           <hr className="flex-1 border-t border-ink/10" />
-          <span className="label-mono text-ink/30">[ <span className="text-blue">ENG</span> // <span className="text-olive">DJ</span> ] — WRITING</span>
+          <span className="label-mono text-ink/30">[ <span className="text-blue">ENG</span>{" // "}<span className="text-olive">DJ</span> ] — WRITING</span>
         </motion.div>
 
         {/* 8 / 4 split */}
