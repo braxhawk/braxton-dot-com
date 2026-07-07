@@ -49,9 +49,9 @@ export default function Experience() {
           {...fadeInUp}
           viewport={viewportConfig}
         >
-          <span className="section-index text-ink">02</span>
+          <span className="section-index text-slate">02</span>
           <hr className="flex-1 border-t border-ink/10" />
-          <span className="label-mono text-ink/30">[ ENG ] — EXPERIENCE</span>
+          <span className="label-mono text-ink/30">[ <span className="text-blue">ENG</span> ] — EXPERIENCE</span>
         </motion.div>
 
         {/* Experience list */}
@@ -81,7 +81,7 @@ export default function Experience() {
                   <span className="label-mono text-ink/30 mr-3">{role.type.toUpperCase()}</span>
                 </div>
                 <h3 className="text-ui-lg text-ink font-medium mb-0.5">{role.role}</h3>
-                <p className="text-ui-base text-ink/50 font-light mb-4">{role.company}</p>
+                <p className="text-ui-base text-blue/70 font-light mb-4">{role.company}</p>
                 <p className="text-ui-sm text-ink/60 font-light leading-relaxed mb-4">
                   {role.description}
                 </p>

@@ -64,7 +64,7 @@ export default function Footer() {
           {/* Col 4 — identity */}
           <div className="col-span-2 md:col-span-1">
             <p className="label-mono text-smoke/25 mb-4">Identity</p>
-            <p className="label-mono text-smoke/40 mb-1">[ ENG // DJ ]</p>
+            <p className="label-mono text-smoke/40 mb-1">[ <span className="text-blue">ENG</span> // <span className="text-olive">DJ</span> ]</p>
             <p className="label-mono text-smoke/25">Systems &amp; Sound</p>
             <p className="label-mono text-smoke/20 mt-4">Vol. I — Ongoing</p>
           </div>

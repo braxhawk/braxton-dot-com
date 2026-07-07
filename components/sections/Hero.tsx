@@ -95,7 +95,7 @@ export default function Hero() {
               variants={fadeUp}
               transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
             >
-              ENG // DJ
+              <span className="text-blue">ENG</span> // <span className="text-olive">DJ</span>
             </motion.span>
           </div>
 

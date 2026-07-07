@@ -40,9 +40,9 @@ export default function Music() {
           {...fadeInUp}
           viewport={viewportConfig}
         >
-          <span className="section-index text-smoke">04</span>
+          <span className="section-index text-slate">04</span>
           <hr className="flex-1 border-t border-smoke/10" />
-          <span className="label-mono text-smoke/30">[ DJ ] — SOUNDS &amp; SETS</span>
+          <span className="label-mono text-smoke/30">[ <span className="text-olive">DJ</span> ] — SOUNDS &amp; SETS</span>
         </motion.div>
 
         {/* 8 / 4 split */}
@@ -111,7 +111,7 @@ export default function Music() {
                         {isSoundCloud ? (
                           <button
                             onClick={() => setOpenMix(isOpen ? null : mix.id)}
-                            className="label-mono text-smoke/30 hover:text-smoke/70 link-underline transition-colors duration-400 cursor-pointer"
+                            className="label-mono text-olive/60 hover:text-olive link-underline transition-colors duration-400 cursor-pointer"
                           >
                             {isOpen ? "CLOSE ↑" : "PLAY →"}
                           </button>

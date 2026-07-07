@@ -30,9 +30,9 @@ export default function Projects() {
           {...fadeInUp}
           viewport={viewportConfig}
         >
-          <span className="section-index text-smoke">03</span>
+          <span className="section-index text-slate">03</span>
           <hr className="flex-1 border-t border-smoke/10" />
-          <span className="label-mono text-smoke/30">[ ENG ] — SELECTED WORK</span>
+          <span className="label-mono text-smoke/30">[ <span className="text-blue">ENG</span> ] — SELECTED WORK</span>
         </motion.div>
 
         {/* Project list */}

@@ -24,7 +24,7 @@ export default function Contact() {
           {...fadeInUp}
           viewport={viewportConfig}
         >
-          <span className="section-index text-ink">06</span>
+          <span className="section-index text-slate">06</span>
           <hr className="flex-1 border-t border-ink/10" />
           <span className="label-mono text-ink/30">CONTACT</span>
         </motion.div>

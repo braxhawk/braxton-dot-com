@@ -32,7 +32,7 @@ export default function About() {
           {...fadeInUp}
           viewport={viewportConfig}
         >
-          <span className="section-index text-ink">01</span>
+          <span className="section-index text-slate">01</span>
           <hr className="flex-1 border-t border-ink/10" />
           <span className="label-mono text-ink/30">ABOUT</span>
         </motion.div>
@@ -115,19 +115,19 @@ export default function About() {
               <p className="label-mono text-ink/35 mb-6">Currently</p>
               <div className="space-y-6">
                 <div>
-                  <p className="label-mono text-ink/25 mb-1">[ BUILDING ]</p>
+                  <p className="label-mono text-blue/50 mb-1">[ BUILDING ]</p>
                   <p className="text-ui-sm text-ink/70 font-light">
                     Archival — a DJs personal toolkit
                   </p>
                 </div>
                 <div>
-                  <p className="label-mono text-ink/25 mb-1">[ LISTENING ]</p>
+                  <p className="label-mono text-olive/60 mb-1">[ LISTENING ]</p>
                   <p className="text-ui-sm text-ink/70 font-light">
                     Cole Knight · Brunello · Derrick Carter
                   </p>
                 </div>
                 <div>
-                  <p className="label-mono text-ink/25 mb-1">[ READING ]</p>
+                  <p className="label-mono text-slate/70 mb-1">[ READING ]</p>
                   <p className="text-ui-sm text-ink/70 font-light">
                     &ldquo;SPEAK&rdquo; — Tunde Oyeneyin
                   </p>
