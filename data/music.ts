@@ -110,7 +110,7 @@ export const weeklyNotes: WeeklyNote[] = [
         artist: "Sentinel",
         album: "Bring The House Down - Single",
         year: "2026",
-        note: "Never fails to get my excited.",
+        note: "Never fails to get me excited.",
       },
       {
         title: "Trifling",
